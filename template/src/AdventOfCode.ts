@@ -31,9 +31,9 @@ export class AdventOfCode {
 
   protected solve(): void { }
 
-  public revealAnswer(value: string): void {
+  public revealAnswer(value: number): void {
     const holder = document.querySelector('[answer]');
-    holder.innerHTML = value;
+    holder.innerHTML = value.toString();
   }
 }
 
